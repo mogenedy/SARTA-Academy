@@ -23,7 +23,7 @@ SARTA Academy is a modular and scalable Laravel application designed to handle e
 
 ## 🛠️ Installation & Setup
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 ```bash
 git clone https://github.com/mogenedy/SARTA-Academy.git
