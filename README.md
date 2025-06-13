@@ -1,108 +1,100 @@
-# 🎓 SARTA Academy – Laravel Learning Platform
-
-A Laravel-based web application for managing an academy system, including user authentication, admin dashboard, and course or student management features.
-
----
-
 ## 📌 Project Overview
 
-SARTA Academy is a modular and scalable Laravel application designed to handle educational operations like managing users, roles, and possibly academic resources (e.g., courses or content). Built with Laravel 10 and includes a RESTful API and front-end views via Blade.
+SARTA Academy is a scalable Laravel-based platform tailored for educational environments. It includes:
+
+- 🧑‍💻 User management and authentication  
+- 🛡️ Role-based access (Admin / User)  
+- 🧾 Admin dashboard with essential tools  
+- ⚙️ RESTful API support  
+- 🎨 Blade-powered user interface  
+
+Built with clean architecture principles, ideal for both learning and extending into real-world use.
 
 ---
 
 ## 🚀 Features
 
-- 👤 User Authentication & Roles (Admin / User)
-- 🛡️ Role-based Access Control via Middleware
-- 🧑‍💼 Admin Dashboard (e.g., users, content, reports)
-- 📄 Blade Templating for UI
-- 🔌 RESTful API Endpoints for integration
-- 📦 Clean Laravel 10 architecture
+✅ **Authentication System**  
+✅ **Admin / User Role Distinction**  
+✅ **Blade Templating Engine**  
+✅ **Middleware for Access Control**  
+✅ **RESTful API for Integration**  
+✅ **Modern Laravel 10 Structure**
 
 ---
 
-🛠️ Installation & Setup
-Follow the steps below to set up the project locally:
+## 🛠️ Installation & Setup
 
-🔁 Clone the Repository
-bash
-Copy
-Edit
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/mogenedy/SARTA-Academy.git
 cd SARTA-Academy
-📦 Install Dependencies
+2️⃣ Install Dependencies
 bash
 Copy
 Edit
 composer install
 npm install && npm run dev
-⚙️ Environment Configuration
+3️⃣ Configure Environment
 bash
 Copy
 Edit
 cp .env.example .env
-Then open the .env file and update your database and mail credentials accordingly.
+Then, update .env with your database, mail, and other environment credentials.
 
-🔑 Generate App Key & Run Migrations
+4️⃣ Generate App Key & Run Migrations
 bash
 Copy
 Edit
 php artisan key:generate
 php artisan migrate
-🚀 Run the Development Server
+5️⃣ Serve the Application
 bash
 Copy
 Edit
 php artisan serve
-Now you can access the application at:
-➡️ http://localhost:8000
-
----
+🌐 Now open your browser at: http://localhost:8000
 
 🔐 Authentication
+Includes Laravel's built-in auth scaffolding.
 
-Built-in Laravel Auth (php artisan make:auth)
+🧑‍🔒 Login & Register pages
 
-Middleware for protecting admin routes
+🛡️ Middleware-protected routes
 
-Login / Register pages
+🔐 Role-based route restrictions (Admin vs User)
 
-Role-based access (e.g., Admin vs. User)
+📡 API Endpoints
+🔗 All API routes are prefixed with /api
 
-
-
----
-
-📡 API Endpoints (Basic)
-
-> ⚠️ All API routes are typically prefixed with /api
-
-
-
-🔑 Auth
-
+🔑 Auth Endpoints
 Method	Endpoint	Description
+POST	/api/login	Login a user
+POST	/api/register	Register a user
+POST	/api/logout	Logout the user
 
-POST	/api/login	Login user
-POST	/api/register	Register user
-POST	/api/logout	Logout authenticated
-
-
-👥 Users
-
+👥 User Endpoints
 Method	Endpoint	Description
-
-GET	/api/users	Get list of users (admin)
-GET	/api/users/{id}	Get single user profile
-PUT	/api/users/{id}	Update user info (admin)
+GET	/api/users	Get all users (admin)
+GET	/api/users/{id}	Get a specific user
+PUT	/api/users/{id}	Update user (admin)
 DELETE	/api/users/{id}	Delete user (admin)
 
-
-📚 (Optional Future) Courses / Content
-
+📚 Course Endpoints (Planned)
 Method	Endpoint	Description
-
 GET	/api/courses	List all courses
 POST	/api/courses	Create new course (admin)
 PUT	/api/courses/{id}	Update course (admin)
 DELETE	/api/courses/{id}	Delete course (admin)
+
+📂 Folder Structure Highlights
+app/Http/Controllers – Web & API controllers
+
+routes/web.php – Routes for UI
+
+routes/api.php – Routes for API
+
+resources/views – Blade templates
+
+database/migrations – Database schema
