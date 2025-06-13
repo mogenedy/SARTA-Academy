@@ -37,22 +37,16 @@ Edit
 composer install
 npm install && npm run dev
 3️⃣ Configure Environment
-bash
-Copy
-Edit
+
 cp .env.example .env
 Then, update .env with your database, mail, and other environment credentials.
 
 4️⃣ Generate App Key & Run Migrations
-bash
-Copy
-Edit
+
 php artisan key:generate
 php artisan migrate
 5️⃣ Serve the Application
-bash
-Copy
-Edit
+
 php artisan serve
 🌐 Now open your browser at: http://localhost:8000
 
