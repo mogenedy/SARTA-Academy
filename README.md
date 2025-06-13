@@ -1,96 +1,116 @@
-🎓 SARTA Academy
-SARTA Academy is a scalable Laravel-based educational platform built with clean architecture principles. It’s designed to be both a learning project and a solid foundation for real-world applications.
+# 🎓 SARTA Academy
 
-📌 Project Overview
-🧑‍💻 User management and authentication
+**SARTA Academy** is a scalable Laravel-based educational platform built with clean architecture principles. It’s designed to be both a learning project and a solid foundation for real-world applications.
 
-🛡️ Role-based access control (Admin / User)
+---
 
-🧾 Admin dashboard with essential tools
+## 📌 Project Overview
 
-⚙️ RESTful API support for integrations
+- 🧑‍💻 User management and authentication  
+- 🛡️ Role-based access control (Admin / User)  
+- 🧾 Admin dashboard with essential tools  
+- ⚙️ RESTful API support for integrations  
+- 🎨 Blade-powered frontend UI  
 
-🎨 Blade-powered frontend UI
+---
 
-🚀 Features
-✅ Built-in authentication system
-✅ Distinct roles: Admin & User
-✅ Blade templating engine for UI
-✅ Middleware-based route protection
-✅ RESTful API support
-✅ Modern Laravel 10 structure
+## 🚀 Features
 
-🛠️ Installation & Setup
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
+✅ Built-in authentication system  
+✅ Distinct roles: Admin & User  
+✅ Blade templating engine for UI  
+✅ Middleware-based route protection  
+✅ RESTful API support  
+✅ Modern Laravel 10 structure  
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/mogenedy/SARTA-Academy.git
 cd SARTA-Academy
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
 composer install
 npm install && npm run dev
-3️⃣ Configure Environment
-bash
-Copy
-Edit
-cp .env.example .env
-Then update your .env file with database, mail, and other environment credentials.
+```
 
-4️⃣ Generate App Key & Run Migrations
-bash
-Copy
-Edit
+### 3️⃣ Configure Environment
+
+```bash
+cp .env.example .env
+```
+
+Then update your `.env` file with database, mail, and other environment credentials.
+
+### 4️⃣ Generate App Key & Run Migrations
+
+```bash
 php artisan key:generate
 php artisan migrate
-5️⃣ Serve the Application
-bash
-Copy
-Edit
+```
+
+### 5️⃣ Serve the Application
+
+```bash
 php artisan serve
-🌐 Open your browser at:
-http://localhost:8000
+```
 
-🔐 Authentication & Access Control
-Built-in Laravel login & register pages
+🌐 Now open your browser at:  
+[http://localhost:8000](http://localhost:8000)
 
-Middleware-protected routes
+---
 
-Role-based restrictions (Admin vs. User)
+## 🔐 Authentication & Access Control
 
-📡 API Endpoints
-All API routes are prefixed with /api
+- Built-in Laravel login & register pages  
+- Middleware-protected routes  
+- Role-based restrictions (Admin vs. User)  
 
-🔑 Auth Endpoints
-Method	Endpoint	Description
-POST	/api/login	Login a user
-POST	/api/register	Register a user
-POST	/api/logout	Logout the user
+---
 
-👥 User Endpoints
-Method	Endpoint	Description
-GET	/api/users	Get all users (admin)
-GET	/api/users/{id}	Get a specific user
-PUT	/api/users/{id}	Update user (admin)
-DELETE	/api/users/{id}	Delete user (admin)
+## 📡 API Endpoints
 
-📚 Course Endpoints (Planned)
-Method	Endpoint	Description
-GET	/api/courses	List all courses
-POST	/api/courses	Create a new course (admin)
-PUT	/api/courses/{id}	Update a course (admin)
-DELETE	/api/courses/{id}	Delete a course (admin)
+> All API routes are prefixed with `/api`
 
-📂 Folder Structure Highlights
-app/Http/Controllers – Web & API controllers
+### 🔑 Auth Endpoints
 
-routes/web.php – UI routes
+| Method | Endpoint         | Description       |
+|--------|------------------|-------------------|
+| POST   | /api/login       | Login a user      |
+| POST   | /api/register    | Register a user   |
+| POST   | /api/logout      | Logout the user   |
 
-routes/api.php – API routes
+### 👥 User Endpoints
 
-resources/views – Blade templates
+| Method | Endpoint              | Description           |
+|--------|-----------------------|-----------------------|
+| GET    | /api/users            | Get all users (admin) |
+| GET    | /api/users/{id}       | Get a specific user   |
+| PUT    | /api/users/{id}       | Update user (admin)   |
+| DELETE | /api/users/{id}       | Delete user (admin)   |
 
-database/migrations – Database schema files
+### 📚 Course Endpoints *(Planned)*
+
+| Method | Endpoint              | Description               |
+|--------|-----------------------|---------------------------|
+| GET    | /api/courses          | List all courses          |
+| POST   | /api/courses          | Create a new course (admin) |
+| PUT    | /api/courses/{id}     | Update a course (admin)   |
+| DELETE | /api/courses/{id}     | Delete a course (admin)   |
+
+---
+
+## 📂 Folder Structure Highlights
+
+- `app/Http/Controllers` – Web & API controllers  
+- `routes/web.php` – UI routes  
+- `routes/api.php` – API routes  
+- `resources/views` – Blade templates  
+- `database/migrations` – Database schema files
