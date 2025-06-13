@@ -1,3 +1,25 @@
+🎓 SARTA Academy
+SARTA Academy is a scalable Laravel-based educational platform built with clean architecture principles. It’s designed to be both a learning project and a solid foundation for real-world applications.
+
+📌 Project Overview
+🧑‍💻 User management and authentication
+
+🛡️ Role-based access control (Admin / User)
+
+🧾 Admin dashboard with essential tools
+
+⚙️ RESTful API support for integrations
+
+🎨 Blade-powered frontend UI
+
+🚀 Features
+✅ Built-in authentication system
+✅ Distinct roles: Admin & User
+✅ Blade templating engine for UI
+✅ Middleware-based route protection
+✅ RESTful API support
+✅ Modern Laravel 10 structure
+
 🛠️ Installation & Setup
 1️⃣ Clone the Repository
 bash
