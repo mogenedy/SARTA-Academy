@@ -21,34 +21,41 @@ SARTA Academy is a modular and scalable Laravel application designed to handle e
 
 ---
 
-## 🛠️ Installation & Setup
+🛠️ Installation & Setup
+Follow the steps below to set up the project locally:
 
-1. Clone the Repository
+🔁 Clone the Repository
+bash
+Copy
+Edit
 git clone https://github.com/mogenedy/SARTA-Academy.git
 cd SARTA-Academy
-
-2. Install Dependencies
-
+📦 Install Dependencies
+bash
+Copy
+Edit
 composer install
 npm install && npm run dev
-
-3. Environment Configuration
-
+⚙️ Environment Configuration
+bash
+Copy
+Edit
 cp .env.example .env
+Then open the .env file and update your database and mail credentials accordingly.
 
-Then open .env and set your database and mail credentials.
-
-4. Generate Key & Run Migrations
-
+🔑 Generate App Key & Run Migrations
+bash
+Copy
+Edit
 php artisan key:generate
 php artisan migrate
-
-5. Run the Server
-
+🚀 Run the Development Server
+bash
+Copy
+Edit
 php artisan serve
-
-Access it via http://localhost:8000
-
+Now you can access the application at:
+➡️ http://localhost:8000
 
 ---
 
