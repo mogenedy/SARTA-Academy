@@ -1,6 +1,6 @@
-# 🎓 SARTA Academy
+# 🎓 EduScaffold
 
-**SARTA Academy** is a scalable Laravel-based educational platform built with clean architecture principles. It’s designed to be both a learning project and a solid foundation for real-world applications.
+**EduScaffold** is a scalable Laravel-based educational platform built with clean architecture principles. It’s designed to be both a learning project and a solid foundation for real-world applications.
 
 ---
 
@@ -30,7 +30,7 @@
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/mogenedy/SARTA-Academy.git
+git clone 
 cd SARTA-Academy
 ```
 
